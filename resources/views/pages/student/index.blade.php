@@ -5,13 +5,14 @@
         </h2>
     </x-slot>
 
-    <div class="py-12">
+    
+    <div class="py-12" style="background-color: #B748A9;">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg" style="background-color: #FFFFFF; color: #000000;">
                 <div class="flex flex-col">
                     <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
                         <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
-                            <div class="flex flex-row mt-6 mb-4">
+                            <div class="flex flex-row mt-6 mb-2">
                                 <div class="w-full">
                                     <form method="GET" action="">
                                         <x-text-input

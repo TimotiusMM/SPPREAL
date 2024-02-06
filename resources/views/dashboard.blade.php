@@ -1,13 +1,13 @@
 <x-app-layout>
-    <x-slot name="header">
+    {{-- <x-slot>
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Dashboard') }}
         </h2>
-    </x-slot>
+    </x-slot> --}}
 
-    <div class="py-12">
+    <div class="py-12" style="background-color: #B748A9;">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg mt-0">
                 <div class="p-6 text-gray-900">
                     {{ __("Selamat datang, " . auth()->user()->name)  }}
                 </div>
@@ -15,9 +15,9 @@
         </div>
     </div>
 
-    <div class="pb-12">
+    <div class="pb-12" style="background-color: #B748A9;">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg mt-0">
                 <div class="flex flex-col">
                     <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
                         <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
@@ -32,6 +32,7 @@
                                     autocomplete="off"
                                 />
                             </form>
+
 
                             <div class="overflow-hidden mb-6">
                                 <table class="min-w-full w-full">

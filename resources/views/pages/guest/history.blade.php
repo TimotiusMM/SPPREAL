@@ -5,12 +5,12 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
                     {{ __('Pembayaran SPP ' . $student->name . ' [' . $student->nisn . ']') }}
-                <form action="{{ route('guest.logout') }}" method="post">
-                    @csrf
-                    <x-primary-button class="mt-4 mx-auto">
-                        {{ __('Keluar') }}
-                    </x-primary-button>
-                </form>
+                    <form action="{{ route('guest.logout') }}" method="post" class="text-center">
+                        @csrf
+                        <x-primary-button class="mt-4">
+                            {{ __('Keluar') }}
+                        </x-primary-button>
+                    </form>
                 </div>
             </div>
         </div>
