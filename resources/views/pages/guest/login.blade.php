@@ -5,21 +5,19 @@
     <form method="POST" action="{{ route('guest.auth') }}">
         @csrf
 
-        <!-- NISN -->
-        <div>
-            <x-input-label for="nisn" :value="__('NISN')"/>
-            <x-text-input id="nisn" class="block mt-1 w-full" type="text" name="nisn" :value="old('nisn')" required
-                          autofocus autocomplete="nisn"/>
-            <x-input-error :messages="$errors->get('nisn')" class="mt-2"/>
-        </div>
+      <!-- NISN -->
+<div>
+    <x-input-label for="nisn" :value="__('NISN')" />
+    <x-text-input id="nisn" class="block mt-1 w-full" type="text" name="nisn" :value="old('nisn')" required autofocus autocomplete="nisn" placeholder="Masukkan NISN Anda" />
+    <x-input-error :messages="$errors->get('nisn')" class="mt-2" />
+</div>
 
-        <!-- NIS -->
-        <div class="mt-4">
-            <x-input-label for="nis" :value="__('NIS')"/>
-            <x-text-input id="nis" class="block mt-1 w-full" type="text" name="nis" :value="old('nis')" required
-                          autofocus autocomplete="nis"/>
-            <x-input-error :messages="$errors->get('nis')" class="mt-2"/>
-        </div>
+<!-- NIS -->
+<div class="mt-4">
+    <x-input-label for="nis" :value="__('NIS')" />
+    <x-text-input id="nis" class="block mt-1 w-full" type="text" name="nis" :value="old('nis')" required autofocus autocomplete="nis" placeholder="Masukkan NIS Anda" />
+    <x-input-error :messages="$errors->get('nis')" class="mt-2" />
+</div>
 
         <div class="flex items-center justify-end mt-4">
             <a href="{{ route('login') }}"
