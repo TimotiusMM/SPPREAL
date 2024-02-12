@@ -15,26 +15,26 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" class="{{ request()->routeIs('dashboard') ? 'text-white' : 'text-black' }}">
                         {{ __('Dashboard') }}
                     </x-nav-link>
-                
+
                     @if(auth()->user()->role == \App\Enums\Role::ADMIN->value)
                         <x-nav-link :href="route('student.index')" :active="request()->routeIs('student.*')" class="{{ request()->routeIs('student.*') ? 'text-white' : 'text-black' }}">
                             {{ __('Siswa') }}
                         </x-nav-link>
-                
+
                         <x-nav-link :href="route('staff.index')" :active="request()->routeIs('staff.*')" class="{{ request()->routeIs('staff.*') ? 'text-white' : 'text-black' }}">
                             {{ __('Petugas') }}
                         </x-nav-link>
-                
+
                         <x-nav-link :href="route('grade.index')" :active="request()->routeIs('grade.*')" class="{{ request()->routeIs('grade.*') ? 'text-white' : 'text-black' }}">
                             {{ __('Kelas') }}
                         </x-nav-link>
-                
+
                         <x-nav-link :href="route('fee.index')" :active="request()->routeIs('fee.*')" class="{{ request()->routeIs('fee.*') ? 'text-white' : 'text-black' }}">
                             {{ __('SPP') }}
                         </x-nav-link>
                     @endif
                 </div>
-                
+
             </div>
 
             <!-- Settings Dropdown -->

@@ -25,7 +25,7 @@
             <div class="w-full sm:max-w-md mt-6 px-6 py-4" style="background-color: #B748A9; shadow-md overflow-hidden sm:rounded-lg">
                 {{ $slot }}
             </div>
-            
+
         </div>
     </body>
 </html>
