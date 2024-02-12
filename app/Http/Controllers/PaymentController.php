@@ -9,6 +9,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\View\View;
+use Illuminate\Support\Carbon; // Import the Carbon class
 
 class PaymentController extends Controller
 {
@@ -38,7 +39,7 @@ class PaymentController extends Controller
     public function create(Student $student): View
     {
         $student->load(['grade', 'fee']);
-        return \view('pages.payment.create', [
+        return view('pages.payment.create', [
             'student' => $student,
             'months' => [
                 'Januari', 'Februari', 'Maret', 'April',
@@ -59,7 +60,7 @@ class PaymentController extends Controller
                 throw new \Exception('Sudah lunas.');
             }
             $data['user_id'] = auth()->user()->id;
-            $data['paid_at'] = now();
+            $data['paid_at'] = Carbon::now()->setTimezone('Asia/Jakarta');
             Payment::create($data);
             return redirect()->route('payment.index', $data['nisn'])->with('status', 'success')->with('message', 'Berhasil.');
         } catch (\Throwable $exception) {
