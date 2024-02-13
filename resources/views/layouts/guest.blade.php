@@ -1,3 +1,5 @@
+{{-- halaman login --}}
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -14,7 +16,7 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans text-gray-900 antialiased" style="background-color: #48B756;">
+    <body class="font-sans text-gray-900 antialiased" style="background-color:#B748A9;">
         <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 ">
             <div>
                 <a href="/">
@@ -22,7 +24,7 @@
                 </a>
             </div>
 
-            <div class="w-full sm:max-w-md mt-6 px-6 py-4" style="background-color: #B748A9; shadow-md overflow-hidden sm:rounded-lg">
+            <div class="w-full sm:max-w-md mt-6 px-6 py-4" style="background-color: #48B756; shadow-md overflow-hidden sm:rounded-lg">
                 {{ $slot }}
             </div>
 

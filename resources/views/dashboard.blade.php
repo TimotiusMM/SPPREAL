@@ -1,3 +1,5 @@
+{{-- dashboard petugas dan admin --}}
+
 <x-app-layout>
     {{-- <x-slot>
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
