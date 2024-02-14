@@ -17,7 +17,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans antialiased">
-        <div class="min-h-screen" style="background-color: #B748A9;">
+        <div class="min-h-screen" style="background-image: url('{{ asset('bg2.png') }}');">
             @include('layouts.navigation')
 
           <!-- Page Heading (warna-500) -->

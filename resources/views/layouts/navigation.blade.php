@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" style="background-color: #48B756; border-bottom: 1px solid #ccc;">
+<nav x-data="{ open: false }" style="background-image: url('{{ asset('bg1.png') }}'); ">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">

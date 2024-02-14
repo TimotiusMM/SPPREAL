@@ -7,19 +7,18 @@
         </h2>
     </x-slot> --}}
 
-    <div class="py-12" style="background-color: #B748A9;">
+    <div class="common-bg py-12" style="background-image: url('{{ asset('bg2.png') }}'); background-size: cover;">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg mt-0">
                 <div class="p-6 text-gray-900">
-                    {{ __("Selamat datang, " . auth()->user()->name)  }}
+                    {{ __("Selamat datang, ") }} <strong>{{ auth()->user()->name }}</strong>
                 </div>
+                
             </div>
         </div>
-    </div>
-
-    <div class="pb-12" style="background-color: #B748A9;">
+    
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg mt-0">
+            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg mt-4">
                 <div class="flex flex-col">
                     <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
                         <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">

@@ -1,10 +1,10 @@
 <x-student-layout>
 
     <div class="pt-6">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8" >
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
-                    {{ __('Pembayaran SPP ' . $student->name . ' [' . $student->nisn . ']') }}
+                    {{ __('Pembayaran SPP, ') }} <strong>{{ $student->name }}</strong> [{{ $student->nisn }}]
                     <form action="{{ route('guest.logout') }}" method="post" class="text-center">
                         @csrf
                         <x-primary-button class="mt-4">
