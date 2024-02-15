@@ -14,7 +14,7 @@
 
                         <div>
                             <x-input-label for="year" :value="__('Tahun')" />
-                            <x-text-input id="year" name="year" type="number" min="2010" max="2030" class="mt-1 block w-full" :value="old('year')" autofocus />
+                            <x-text-input id="year" name="year" type="number" min="2010" max="2040" class="mt-1 block w-full" :value="old('year')" autofocus />
                             <x-input-error class="mt-2" :messages="$errors->get('year')" />
                         </div>
 
